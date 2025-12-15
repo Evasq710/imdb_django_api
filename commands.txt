@@ -1,0 +1,6 @@
+> django-admin startproject <pjct_name> .
+  <pjct_name>/
+  |__... (django files)
+  manage.py
+
+> python manage.py startapp <app_name>
