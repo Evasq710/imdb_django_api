@@ -4,3 +4,21 @@
   manage.py
 
 > python manage.py startapp <app_name>
+
+# Transforming models to a Migration class. The output can be found in <app_name>/migrations/
+# This creates a pre-setup to then do the official migration (ORM > SQL)
+python manage.py makemigrations [<app_name>]
+
+# Executing migrations (ORM > SQL)
+# This creates Django database tables
+> python manage.py migrate
+
+# Shows Migration Classes, and if they are already migrated to the database
+> python manage.py showmigrations
+
+# Create superuser (needed for the admin panel: {{base_url}}/admin)
+> python manage.py createsuperuser
+
+# Executing app
+> python manage.py runfcgi   # run this project as a fastcgi
+> python manage.py runserver # start a lightweight web server for development
