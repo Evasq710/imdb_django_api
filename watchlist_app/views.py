@@ -13,3 +13,15 @@ def movie_list(request):
   }
 
   return JsonResponse(data)
+
+
+# GET AN SPECIFIC MOVIE
+def movie_details(request, pk):
+  movie = Movie.objects.get(pk=pk) # returns a Movie Object if found
+  data = {
+    'name': movie.name,
+    'description': movie.description,
+    'active': movie.active,
+  }
+
+  return JsonResponse(data)
