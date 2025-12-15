@@ -22,3 +22,7 @@ python manage.py makemigrations [<app_name>]
 # Executing app
 > python manage.py runfcgi   # run this project as a fastcgi
 > python manage.py runserver # start a lightweight web server for development
+
+
+### DJANGO REST FRAMEWORK ###
+pip install djangorestframework
